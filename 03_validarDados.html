@@ -14,13 +14,14 @@
 
 
     //PROCESSAMENTO
-    do{
+    while (name > 3 || 0 < age < 150 || salario > 0 || sexo !== "F" && sexo !== "M" || estadoCivil !== "S" && estadoCivil !== "C" && estadoCivil !== "V" && estadoCivil !== "D") {
+        
         name = prompt("digite o seu nome, por favor!");
         age = Number(prompt("digite a sua idade"));
-        salario = Number(prompt("digite o seu salario"))
-        
+        salario = Number(prompt("digite o seu salario"));
+        sexo = prompt("informe o seu sexo. (F ou M)").toUpperCase();
+        estadoCivil = prompt("informe o seu estado civil ('s', 'c', 'v', 'd')").toUpperCase();
     }
-
     //SAÍDA
 
 </script>
