@@ -6,11 +6,22 @@
     */
 
     //ENTRADA
-
+     let paisA = 800000
+     let paisB = 2000000
+     let porcA = 0.03
+     let porcB = 0.015
 
     //PROCESSAMENTO
 
+    let anos = 0
+
+    while ( paisA <= paisB ) {
+        paisA += paisA * porcA;
+        paisB += paisB * porcB;
+        anos++;
+    }
 
     //SAÍDA
 
+    document.write("precisara de:" + anos + " para conseguir ultrapassar o pais B")
 </script>
