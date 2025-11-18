@@ -6,18 +6,16 @@
     */
 
     //ENTRADA
-     let paisA = 800000
-     let paisB = 2000000
-     let porcA = 0.03
-     let porcB = 0.015
+    let paisA = 800000
+    let paisB = 2000000
+    let anos = 0
+
 
     //PROCESSAMENTO
 
-    let anos = 0
-
-    while ( paisA <= paisB ) {
-        paisA += paisA * porcA;
-        paisB += paisB * porcB;
+    while (paisA <= paisB) {
+        paisA += paisA * 1.03;
+        paisB += paisB * 1.015;
         anos++;
     }
 
